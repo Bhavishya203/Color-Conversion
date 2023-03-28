@@ -103,7 +103,7 @@ cv2.destroyAllWindows()
 ```
 ## Output:
 ### i) BGR and RGB to HSV and GRAY
-
+https://github.com/Bhavishya203/Color-Conversion/blob/main/dip3b(1).jpg
 
 ### ii) HSV to RGB and BGR
 <br>
