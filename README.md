@@ -26,7 +26,7 @@ Destroy all the windows and end the program.
 # Register Number:212221230061
 # i) Convert BGR and RGB to HSV and GRAY
 import cv2
-Image = cv2.imread('rock.jpg')
+Image = cv2.imread('umbre.jpg')
 cv2.imshow('Original Image',Image)
 hsvImage = cv2.cvtColor(Image,cv2.COLOR_BGR2HSV)
 cv2.imshow('BGR2HSV',hsvImage)
@@ -44,7 +44,7 @@ cv2.destroyAllWindows()
 
 # ii)Convert HSV to RGB and BGR
 import cv2
-HSVImage = cv2.imread('rock.jpg')
+HSVImage = cv2.imread('umbre.jpg')
 cv2.imshow('Original HSV Image',HSVImage)
 RGBImage = cv2.cvtColor(HSVImage,cv2.COLOR_HSV2RGB)
 cv2.imshow('BGR2HSV',RGBImage)
@@ -58,7 +58,7 @@ cv2.destroyAllWindows()
 
 # iii)Convert RGB and BGR to YCrCb
 import cv2
-Image = cv2.imread('rock.jpg')
+Image = cv2.imread('umbre.jpg')
 cv2.imshow('Original HSV Image',Image)
 YCrCb_image = cv2.cvtColor(Image, cv2.COLOR_RGB2YCrCb)
 cv2.imshow('BGR2HSV',YCrCb_image)
@@ -71,7 +71,7 @@ cv2.destroyAllWindows()
 
 # iv)Split and Merge RGB Image
 import cv2
-image = cv2.imread('rock.jpg')
+image = cv2.imread('umbre.jpg')
 blue = image[:,:,0]
 green = image[:,:,1]
 red = image[:,:,2]
@@ -87,7 +87,7 @@ cv2.destroyAllWindows()
 
 # v) Split and merge HSV Image
 import cv2
-image = cv2.imread('rock.jpg')
+image = cv2.imread('umbre.jpg')
 hsv = cv2.cvtColor(image,cv2.COLOR_BGR2HSV)
 h,s,v = cv2.split(hsv)
 cv2.imshow('Hue - Image',h)
